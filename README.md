@@ -6,9 +6,14 @@ Large Language Models (LLMs) have demonstrated a remarkable potential in medical
 
 ![Image text](https://github.com/believewhat/JMLR-Joint-Medical-LLM-and-Retrieval-Training/blob/main/figure/sample_figure.png)
 
+**DataSet**
+
+We utilized GPT-4 to generate corresponding reasoning for each question on MedQA, and these reasonings were then incorporated into the guidelines. You could download them from [Huggingface](https://huggingface.co/datasets/akemiH/MedQA-Reason)
+
+
 **How to use**
 
-You could download our model from [Huggingface]([https://drive.google.com/file/d/1wwXYF9ictgZQ0DyxRsbkP5M6tXHxExsC/view?usp=sharing](https://huggingface.co/akemiH/JMLR))
+You could download our model from [Huggingface](https://huggingface.co/akemiH/JMLR)
 
 ```python
 CUDA_VISIBLE_DEVICES=0 python inference_ir.py \
