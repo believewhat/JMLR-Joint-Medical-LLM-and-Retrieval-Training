@@ -8,12 +8,12 @@ Large Language Models (LLMs) have demonstrated a remarkable potential in medical
 
 **DataSet**
 
-We utilized GPT-4 to generate corresponding reasoning for each question on MedQA, and these reasonings were then incorporated into the guidelines. You could download them from [Huggingface](https://huggingface.co/datasets/akemiH/MedQA-Reason)
+We utilized GPT-4 to generate corresponding reasoning for each question on MedQA, and these reasonings were then incorporated into the guidelines. You could download them from [MedQA-Reason](https://huggingface.co/datasets/akemiH/MedQA-Reason)
 
 
 **How to use**
 
-You could download our model from [Huggingface](https://huggingface.co/akemiH/JMLR)
+We release our model for MedQA. You could download the model from [JMLR-13B](https://huggingface.co/akemiH/JMLR)
 
 ```python
 CUDA_VISIBLE_DEVICES=0 python inference_ir.py \
