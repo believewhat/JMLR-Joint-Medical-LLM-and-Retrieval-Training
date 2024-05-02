@@ -271,15 +271,6 @@ def main(args):
         selected_indices = torch.argsort(scores)[-5:]
         doc_select = [doc[i][j] for j in selected_indices]
         text = 'Reference:\n' + '\nReference:\n'.join(doc_select) + '\nQuestion:\n' + list_data_dict[i]['input'] + '\nPlease only give the correct option. Correct Answer:'
-        if len(text.split()) > 5000:
-            selected_indices = torch.argsort(scores)[-5:]
-            selected_indices_revise = []
-            for j in selected_indices:
-                if len(doc[i][j].split()) > 1000:
-                    continue
-                selected_indices_revise.append(j)
-            doc_select = [doc[i][j] for j in selected_indices_revise]
-            text = 'Reference:\n' + '\nReference:\n'.join(doc_select) + '\nQuestion:\n' + list_data_dict[i]['input'] + '\nPlease only give the correct option. Correct Answer:'
         sources.append(text)
 
     
