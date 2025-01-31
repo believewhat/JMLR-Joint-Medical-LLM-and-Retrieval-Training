@@ -24,13 +24,4 @@ CUDA_VISIBLE_DEVICES=0 python inference_ir.py \
     --max_gen_len 10
 ```
 
-**Reference**
 
-```
-@article{wang2024jmlr,
-  title={JMLR: Joint Medical LLM and Retrieval Training for Enhancing Reasoning and Professional Question Answering Capability},
-  author={Wang, Junda and Yang, Zhichao and Yao, Zonghai and Yu, Hong},
-  journal={arXiv preprint arXiv:2402.17887},
-  year={2024}
-}
-```
